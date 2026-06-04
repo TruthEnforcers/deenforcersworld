@@ -1,0 +1,52 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-church",
+      "description": "Inspiring church interior with warm lighting",
+      "imageUrl": "/img1.jpg",
+      "imageHint": "church interior"
+    },
+    {
+      "id": "lead-pastor",
+      "description": "Portrait of the lead pastor smiling",
+      "imageUrl": "/zeru1.jpg",
+      "imageHint": "pastor portrait"
+    },
+    {
+      "id": "service-bg",
+      "description": "Captivating background for service times section",
+      "imageUrl": "https://picsum.photos/seed/service/1200/800",
+      "imageHint": "worship background"
+    },
+    {
+      "id": "ministry-youth",
+      "description": "Youth group gathering",
+      "imageUrl": "https://picsum.photos/seed/youth/600/400",
+      "imageHint": "youth group"
+    },
+    {
+      "id": "ministry-outreach",
+      "description": "Community outreach project",
+      "imageUrl": "https://picsum.photos/seed/outreach/600/400",
+      "imageHint": "community service"
+    },
+    {
+      "id": "ministry-worship",
+      "description": "Worship team performing",
+      "imageUrl": "https://picsum.photos/seed/worship/600/400",
+      "imageHint": "worship band"
+    },
+    {
+      "id": "ministry-kids",
+      "description": "Nurturing children in the way of the Lord",
+      "imageUrl": "https://picsum.photos/seed/kids/600/400",
+      "imageHint": "children classroom"
+    },
+    {
+      "id": "event-conference",
+      "description": "Upcoming church conference",
+      "imageUrl": "https://picsum.photos/seed/conference/800/600",
+      "imageHint": "conference hall"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand Colors: Navy, Gold, Red, Off-white */
+    --background: 240 20% 8%;
+    /* Deep navy-black */
+    --foreground: 45 100% 95%;
+    /* Warm cream text */
+    --card: 240 15% 12%;
+    /* Slightly lighter card */
+    --primary: 45 90% 55%;
+    /* Gold */
+    --accent: 270 60% 55%;
+    --card-foreground: 240 29% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 29% 15%;
+    --primary-foreground: 60 14% 98%;
+    --secondary: 45 54% 92%;
+    /* Light Gold wash */
+    --secondary-foreground: 217 64% 15%;
+    --muted: 60 10% 90%;
+    --muted-foreground: 217 20% 40%;
+    --accent-foreground: 217 64% 10%;
+    --destructive: 0 74% 46%;
+    /* #CC1F1F - Holy Spirit Red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 217 20% 85%;
+    --input: 217 20% 85%;
+    --ring: 45 54% 54%;
+    --radius: 1.25rem;
+  }
+
+  .dark {
+    --background: 217 64% 5%;
+    --foreground: 60 14% 98%;
+    --primary: 60 14% 98%;
+    --primary-foreground: 217 64% 15%;
+    --accent: 45 54% 54%;
+    --accent-foreground: 217 64% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-headline tracking-tight;
+  }
+}
+
+@keyframes bounce-arrow {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes bounce-x {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes bounce-soft {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce-arrow {
+  animation: bounce-arrow 2s infinite;
+}
+
+.animate-bounce-x {
+  animation: bounce-x 2s infinite;
+}
+
+.animate-bounce-soft {
+  animation: bounce-soft 2s infinite;
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #C8A84B 0%, #E8D08F 50%, #C8A84B 100%);
+}
